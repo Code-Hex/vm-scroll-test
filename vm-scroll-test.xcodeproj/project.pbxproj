@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		70C8465628B8614400F89087 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C8465528B8614400F89087 /* main.m */; };
+		70C8465D28B8616800F89087 /* view.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C8465C28B8616800F89087 /* view.m */; };
+		70C8466128B8656700F89087 /* viewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C8466028B8656700F89087 /* viewController.m */; };
+		70C8466428B865DB00F89087 /* appDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C8466328B865DB00F89087 /* appDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,13 @@
 /* Begin PBXFileReference section */
 		70C8465228B8614400F89087 /* vm-scroll-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "vm-scroll-test"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C8465528B8614400F89087 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		70C8465C28B8616800F89087 /* view.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = view.m; sourceTree = "<group>"; };
+		70C8465E28B8617800F89087 /* view.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = view.h; sourceTree = "<group>"; };
+		70C8465F28B861D400F89087 /* vm-scroll-test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "vm-scroll-test.entitlements"; sourceTree = "<group>"; };
+		70C8466028B8656700F89087 /* viewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = viewController.m; sourceTree = "<group>"; };
+		70C8466228B8658200F89087 /* viewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = viewController.h; sourceTree = "<group>"; };
+		70C8466328B865DB00F89087 /* appDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appDelegate.m; sourceTree = "<group>"; };
+		70C8466528B865F500F89087 /* appDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = appDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +67,14 @@
 		70C8465428B8614400F89087 /* vm-scroll-test */ = {
 			isa = PBXGroup;
 			children = (
+				70C8465F28B861D400F89087 /* vm-scroll-test.entitlements */,
 				70C8465528B8614400F89087 /* main.m */,
+				70C8465C28B8616800F89087 /* view.m */,
+				70C8465E28B8617800F89087 /* view.h */,
+				70C8466328B865DB00F89087 /* appDelegate.m */,
+				70C8466528B865F500F89087 /* appDelegate.h */,
+				70C8466028B8656700F89087 /* viewController.m */,
+				70C8466228B8658200F89087 /* viewController.h */,
 			);
 			path = "vm-scroll-test";
 			sourceTree = "<group>";
@@ -119,6 +136,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C8466428B865DB00F89087 /* appDelegate.m in Sources */,
+				70C8465D28B8616800F89087 /* view.m in Sources */,
+				70C8466128B8656700F89087 /* viewController.m in Sources */,
 				70C8465628B8614400F89087 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +258,9 @@
 		70C8465A28B8614400F89087 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = arm64;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = "vm-scroll-test/vm-scroll-test.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -246,6 +269,9 @@
 		70C8465B28B8614400F89087 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = arm64;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = "vm-scroll-test/vm-scroll-test.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
